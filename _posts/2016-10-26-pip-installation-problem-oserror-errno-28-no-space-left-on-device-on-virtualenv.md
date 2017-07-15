@@ -8,19 +8,19 @@ tags: [django, Errno 28, install, lubuntu, no space left on device, OSError, pip
 ---
 I've met this error twice during pip installation in virtualenv
 
-The point is my storage is <strong>NOT full or overflow</strong> what kind....weird
+The point is my storage is **NOT full or overflow** what kind....weird
 
-<span style="color: #ff0000;"><code>OSError: [Errno 28] No space left on device</code></span>
+<span style="color: #ff0000;">```OSError: [Errno 28] No space left on device```</span>
 
 ![]({{ site.url }}/images/posts/1-1.png)
 
 Use instructions below to resolve:
-<p class="lang-py prettyprint prettyprinted"><strong><code><span class="pln">sudo umount </span><span class="pun">/</span><span class="pln">tmp sudo echo </span><span class="str">'MINTMPKB=0'</span> <span class="pun">&gt;</span><span class="pln"> sudo </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">default</span><span class="pun">/</span><span class="pln">mountoverflowtmp </span></code></strong></p>
+<p class="lang-py prettyprint prettyprinted">```<span class="pln">sudo umount </span><span class="pun">/</span><span class="pln">tmp sudo echo </span><span class="str">'MINTMPKB=0'</span> <span class="pun">&gt;</span><span class="pln"> sudo </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">default</span><span class="pun">/</span><span class="pln">mountoverflowtmp </span>```</p>
 BUT!!
 
-if umount cannot work, try <strong><code>sudo umount -l /tmp</code></strong>
+if umount cannot work, try ```sudo umount -l /tmp```
 
-It might <strong>take a while</strong> to get through this
+It might **take a while** to get through this
 
 ![]({{ site.url }}/images/posts/virtualenv-installed.png)
 

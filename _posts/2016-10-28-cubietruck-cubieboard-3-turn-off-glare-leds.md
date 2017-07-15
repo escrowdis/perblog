@@ -8,48 +8,63 @@ tags: [bash, bash file, cb3, CT, cubieboard 3, CubieTruck, Embedded, led, startu
 ---
 Create a bash to turn of  LEDs and it should have root's permission =D
 <h1>Step 1</h1>
-<strong><code>sudo su -</code></strong>
 
-<code>vi led-off</code>
+```bash
+sudo su -
+vi led-off
+```
 
 and paste these in the file
 
-<strong><code>cd /sys/class/leds/
+```bash
+cd /sys/class/leds/
 echo 0 &gt; blue\:ph21\:led1/brightness
 echo 0 &gt; green\:ph07\:led4/brightness
 echo 0 &gt; orange\:ph20\:led2/brightness
-echo 0 &gt; white\:ph11\:led3/brightness</code></strong>
+echo 0 &gt; white\:ph11\:led3/brightness
+```
 
 And make it executable
 
-<strong><code>chmod +x led-off</code></strong>
+```bash
+chmod +x led-off
+```
 
 Then you can run in root by
 
-<code>./led-off</code>
+```bash
+./led-off
+```
 
 BUT you have to do it after reboot again and again
 
-So try to add the bash script into <strong>startup step</strong>
+So try to add the bash script into **startup step**
 <h1>Step 2</h1>
-<code>cd /etc/init.d/</code>
+```bash
+cd /etc/init.d/
+```
 
-<code>vi led-off</code>
+```bash
+vi led-off
+```
 
 Add these codes into it
 
-<code>cd /sys/class/leds/
+```bash
+cd /sys/class/leds/
 echo 0 &gt; blue\:ph21\:led1/brightness
 echo 0 &gt; green\:ph07\:led4/brightness
 echo 0 &gt; orange\:ph20\:led2/brightness
-echo 0 &gt; white\:ph11\:led3/brightness</code>
+echo 0 &gt; white\:ph11\:led3/brightness
+```
 
 Then run
 
-<code>sudo update-rc.d led-off defaults</code>
-
+```bash
+sudo update-rc.d led-off defaults
+```
 
 ![]({{ site.url }}/images/posts/led-off.png)
 
-
-Ref. about <a href="http://cychiang719.blogspot.tw/2009/02/ubuntuupdate-rcd.html" target="_blank">update-rc.d</a> and <a href="http://askubuntu.com/questions/228304/how-do-i-run-a-script-at-start-up" target="_blank">add script to startup</a>
+[Ref. 1](http://cychiang719.blogspot.tw/2009/02/ubuntuupdate-rcd.html)
+[Ref. 2](http://askubuntu.com/questions/228304/how-do-i-run-a-script-at-start-up)

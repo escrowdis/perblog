@@ -58,6 +58,9 @@ If you have `/` inside pattern, use `\/` (just like `\n`)
 `ps aux |  grep <program-name> | awk '{print $2}' | xargs kill -9`
 (print $2 will print the PID)
 
+## Check CPU details if you want to overclock
+`cpufrequtils`
+
 - - -
 
 # 虛擬環境 Virtual environment

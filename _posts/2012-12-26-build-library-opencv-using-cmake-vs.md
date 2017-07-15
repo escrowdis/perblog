@@ -24,13 +24,12 @@ Make OpenCV 2.4.3
 
 3. Visual Studio 10進入，開.sln進入後 會發現 <b>ALL BUILD</b>，右鍵按<b>重建</b>即可=D
 
-可以看這個 蠻有用的
-<a href="http://docs.opencv.org/doc/tutorials/introduction/windows_install/windows_install.html#windows-installation">http://docs.opencv.org/doc/tutorials/introduction/windows_install/windows_install.html#windows-installation</a>
+可以看[這個](http://docs.opencv.org/doc/tutorials/introduction/windows_install/windows_install.html#windows-installation) 蠻有用的
 
 PS:目前另外一種方法尚未解決
 使用CMake, cmd.exe, Mingw...etc 還沒搞懂@W@
 
-<span style="font-size: large;">要熟悉</span>
-<span style="font-size: large;">1. CMake</span>
-<span style="font-size: large;">2. Mingw</span>
-<span style="font-size: large;">3. SVN</span>
+要熟悉
+1. CMake
+2. Mingw
+3. SVN

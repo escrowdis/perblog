@@ -29,11 +29,11 @@ git clone https://github.com/PointCloudLibrary/pcl.git
 - - -
 After download it, let's use CMake to build it! The following steps will teach you how to build it.
 <br>
-a) [Compiling PCL from source on Windows](http://pointclouds.org/documentation/tutorials/compiling_pcl_windows.php)
+1. [Compiling PCL from source on Windows](http://pointclouds.org/documentation/tutorials/compiling_pcl_windows.php)
 <br>
-b) [Compiling from source](http://www.pointclouds.org/downloads/source.html)
+2. [Compiling from source](http://www.pointclouds.org/downloads/source.html)
 <br>
-c) [Using PCL in your own project](http://pointclouds.org/documentation/tutorials/using_pcl_pcl_config.php#using-pcl-pcl-config)
+ [Using PCL in your own project](http://pointclouds.org/documentation/tutorials/using_pcl_pcl_config.php#using-pcl-pcl-config)
 
 ### Building steps
 [Follow this site's steps](http://pointclouds.org/documentation/tutorials/compiling_pcl_windows_3rdparty_installers.php#compiling-pcl-windows-3rdparty-installers)

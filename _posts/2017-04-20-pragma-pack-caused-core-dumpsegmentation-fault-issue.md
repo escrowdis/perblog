@@ -7,11 +7,16 @@ author: escrowdis
 comments: true
 tags: [pack, memory_alignment]
 ---
-Today is a long day because my colleagues and I spent lots of times debugging. We've tried to use v4l2 to capture image from camera and display using OpenCV. But we met a problem is no matter how we call any cv functions, the program went core dump kind of crash. That's weird but we solved it by tracking a class using
+Today is a long day because my colleagues and I spent lots of times debugging. We've tried to use v4l2 to capture image from camera and display using OpenCV.
 
-`#pragma pack(1)`
+But we met a problem is no matter how we call any cv functions, the program went core dump kind of crash. Finally we solved it by tracking a class using
+```c++
+#pragma pack(1)
+```
 
-It's the way to guide compiler to pack structure with specific alignment (let processor easier to grab data with less access). The default pack is 16 under x64 bit processor now.
+It's the way to **guide compiler to pack structure with specific alignment** (let processor easier to grab data with less access).
+ 
+**Note**: The default pack is 16 under x64 bit processor now.
 
 Ref.:
 - [ref1](https://msdn.microsoft.com/en-us/library/2e70t5y1.aspx)

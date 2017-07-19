@@ -13,7 +13,9 @@ So I tried to compile python code into c code to speed up.
 And~ I found There're many ways to compile by [Cython](http://docs.cython.org/en/latest/index.html)
 
 1. Download from [web](http://docs.cython.org/en/latest/src/quickstart/install.html), and open cmd at download folder. Type
-`pip install Cython-0.25.1-cp35-none-win_amd64.whl`
+```
+pip install Cython-0.25.1-cp35-none-win_amd64.whl
+```
 2. Go to folder contains target python code
 3. `python setup.py build_ext --inplace`
 

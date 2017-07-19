@@ -5,26 +5,9 @@ description:  "virtualenvwrapper, tmux, reptyr, screen, external ip, ldd"
 date: 2016-10-28 08:23
 author: escrowdis
 comments: true
-tags: [git, cmd, external ip, linux, reptyr, screen, Tech issues, tmux, virtualenv, virtualenvwrapper]
+tags: [cmd, external ip, linux, reptyr, screen, Tech issues, tmux, virtualenv, virtualenvwrapper]
 ---
 # Useful commands
-
-## git
-### Add things to **not last** commit
-```git
-git add <files-want-to-update>
-git commit --fixup=<old-commit>
-# if you have uncommited changes, do stash to store them up
-git stash save tmp
-git rebase --interactive --autosquash <old-commit>
-# if you stashed something up
-git stash pop tmp
-```
-### Edit **not last** commit message
-`git rebase --interactive <old-commit>^`
-
-### Add things to last commit
-`git commit --amend`
 
 ## grep
 ### Find specific word/pattern in files

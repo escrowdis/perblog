@@ -61,6 +61,34 @@ If you have `/` inside pattern, use `\/` (just like `\n`)
 ## Check CPU details if you want to overclock
 `cpufrequtils`
 
+- - -     
+
+# 再也不用害怕事情做到一半ssh斷線要重來 <br>Don't Be Afraid of Get Disconnected During SSH
+## tmux
+- **C-b** means typing Ctrl+b together
+- Type `tmux` or `tmux new -s <session-name>` to create session
+- Create new pane on right side `C-b %`; create new pane bottom `C-b "`
+- Switch pane `C-b <arrow-key>`
+- Close pane `Ctrl-d` or `exit`
+- Detach current session `C-b d`, deteach specific session `C-b D`
+- List running session `tmux ls`
+- Change session name `tmux rename-session -t <old> <new>`
+- Attach session `tmux attach -t <session-name>`
+- Ref.: 
+    - [easy to use tmux](http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
+    - [tmux](http://man.openbsd.org/OpenBSD-current/man1/tmux.1)
+    - [ref](http://hyperpolyglot.org/multiplexers)
+
+## screen: 事情沒用完卻有事必須要斷開ssh連線？
+- create session `screen -S <your_session>`
+- reattach the session `screen -r <session_want_reattach>`
+- list all sessions `screen -ls`
+- detach and logout remote `screen -D <your_session>`
+- scroll up 'n' down `C-a [ [Pg Up]/[Pg Dn]/[Arrow_key]`
+- detach session `C-a D`
+- Reboot will flush all the session =)
+- ref.: [ref1](https://writesnow.net/2014/09/linux-screen%E6%8C%87%E4%BB%A4-%E7%99%BB%E5%87%BA%E8%80%8C%E4%B8%8D%E4%B8%AD%E6%96%B7%E4%BD%9C%E6%A5%AD%EF%BC%81/), [ref2](http://hyperpolyglot.org/multiplexers)
+
 - - -
 
 # 虛擬環境 Virtual environment
@@ -94,33 +122,15 @@ It's DONE! Now you can do as following,
 ### For more information, please check the references.: [virtualwrapper](http://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html)
 , [virtualenvs](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 
-- - -     
+- - -
 
-# 再也不用害怕事情做到一半ssh斷線要重來 <br>Don't Be Afraid of Get Disconnected During SSH
-## tmux
-- **C-b** means typing Ctrl+b together
-- Type `tmux` or `tmux new -s <session-name>` to create session
-- Create new pane on right side `C-b %`; create new pane bottom `C-b "`
-- Switch pane `C-b <arrow-key>`
-- Close pane `Ctrl-d` or `exit`
-- Detach current session `C-b d`, deteach specific session `C-b D`
-- List running session `tmux ls`
-- Change session name `tmux rename-session -t <old> <new>`
-- Attach session `tmux attach -t <session-name>`
-- Ref.: 
-    - [easy to use tmux](http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
-    - [tmux](http://man.openbsd.org/OpenBSD-current/man1/tmux.1)
-    - [ref](http://hyperpolyglot.org/multiplexers)
-
-## screen: 事情沒用完卻有事必須要斷開ssh連線？
-- create session `screen -S <your_session>`
-- reattach the session `screen -r <session_want_reattach>`
-- list all sessions `screen -ls`
-- detach and logout remote `screen -D <your_session>`
-- scroll up 'n' down `C-a [ [Pg Up]/[Pg Dn]/[Arrow_key]`
-- detach session `C-a D`
-- Reboot will flush all the session =)
-- ref.: [ref1](https://writesnow.net/2014/09/linux-screen%E6%8C%87%E4%BB%A4-%E7%99%BB%E5%87%BA%E8%80%8C%E4%B8%8D%E4%B8%AD%E6%96%B7%E4%BD%9C%E6%A5%AD%EF%BC%81/), [ref2](http://hyperpolyglot.org/multiplexers)
+# Image editing
+## Resize using _imagemagick_
+```bash
+sudo apt-get install imagemagick
+convert -resize <percentage>% <source.png> <dest.jpg>
+convert -resize <width>x<height> <source.png> <dest.jpg>
+```
 
 - - -
 

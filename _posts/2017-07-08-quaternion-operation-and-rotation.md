@@ -10,7 +10,9 @@ Preface
 ---
 This article is going to tell how to use quaternion to describe rotation in 3 dimension.
 
-If you need detailed definition and information, please go check [Wiki](https://en.wikipedia.org/wiki/Quaternion) & [wiki rotation](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation).
+If you need detailed definition and information, please go check
+[Wiki](https://en.wikipedia.org/wiki/Quaternion) &
+[wiki rotation](https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation).
 
 # Basic definition
 ### Operation

@@ -28,4 +28,7 @@ git rebase --interactive <old-commit>^
 git commit --amend
 ```
 
+## File name with and without capital
+go to .git/config, and set `ignorecase = false` to prevent there's always unstage changes. 
+
 TBD.

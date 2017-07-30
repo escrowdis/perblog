@@ -19,6 +19,8 @@ If you want detailed information and definition about it, please check the links
 
 ### Operation
 
+$$i^2 = j^2 = k^2 = -1$$
+
 $i^2 = j^2 = k^2 = ijk = -1$
 
 $ij = k, jk = i, ki = j$

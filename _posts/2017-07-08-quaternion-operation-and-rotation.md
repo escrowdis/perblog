@@ -27,12 +27,13 @@ $$ij = k, jk = i, ki = j$$
 
 $$ji = -k, kj = -i, ik = -j$$
 
-|       |  1  |  i  |  j  |  k  |
-|-------| --- | --- | --- | --- |
-| **1** |  1  |  i  |  j  |  k  |
-| **i** |  i  | -1  |  k  | -j  |
-| **j** |  j  | -k  | -1  |  i  |
-| **k** |  k  |  j  | -i  | -1  |
+$$\begin{matrix}
+& 1 & i & j & k \\
+1 & 1 &  i &  j &  k \\
+i & i & -1 &  k & -j \\
+j & j & -k & -1 &  i \\
+k & k &  j & -i & -1 \\
+\end{matrix}$$
 
 $$q = (s, v) = s + v_{x} \vec{i} + v_{y} \vec{j} + v_{z} \vec{k}$$
 
@@ -114,10 +115,14 @@ int main() {
 
 ## Between Quaternions
 
-In 3 dimension rotation, the operation between two quaternion must be **UNIT quaternion ($q_u$)**
+In 3 dimension rotation, the operation between two quaternion must be **UNIT quaternion ($$q_u$$)**
 which is a.k.a. normalized shown below:
 
-$$q_u = \frac{ q }{ ||q|| } = (q_w, q_x, q_y, q_z)$ and  $||q_u|| = 1$$.
+$$q_u = \frac{ q }{ ||q|| } = (q_w, q_x, q_y, q_z)$$
+
+and
+
+$$||q_u|| = 1$$
 
 Here's an **example**:
 

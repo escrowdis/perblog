@@ -28,11 +28,11 @@ If you have `/` inside pattern, use `\/` (just like `\n`)
 ### Delete line in file
 `sed -i '/<pattern>/d' <file-path>`
 
-##ldd
+## ldd
 ### Check what dynamic linking library
 `ldd <binary exec file>`
 
-##Else
+## Else
 ### Get external IP
 `wget http://ipinfo.io/ip -qO -`
 (-q: quiet mode; -O: output file)

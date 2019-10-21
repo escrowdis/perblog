@@ -2,6 +2,7 @@
 title: About me
 ---
 
-Hi!
+Hi! It's the page to record things I learn every possible day!
+Know more about me at [my page](https://escrowdis.tw){:target="_blank"}
 
-Find me on [GitHub](https://github.com/escrowdis) or [LinkedIn](https://www.linkedin.com/in/li-kang-weng-taiwan/).
+[GitHub](https://github.com/escrowdis){:target="_blank"} or [LinkedIn](https://www.linkedin.com/in/lkw-tw/){:target="_blank"}.
